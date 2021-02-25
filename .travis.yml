@@ -1,12 +1,10 @@
 language: cpp
 
 os: linux
+env: PYTHON=3.6
 
 # Install necessary packages
 before_install:
-    - sudo apt update
-    - sudo apt-get install python3.6
-    - sudo update-alternatives  --set python /usr/bin/python3.6
     - python --version
 install:
   - pip install -r requirements.txt
