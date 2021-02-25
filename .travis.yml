@@ -5,8 +5,8 @@ env: PYTHON=3.6
 
 # Install necessary packages
 before_install:
-    - python --version
+    - python3 --version
 install:
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
 script:
-  — pytest
+  — python3 pytest
