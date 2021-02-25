@@ -1,6 +1,9 @@
 # Set up environment
-language: cpp
-
+matrix:
+  include:
+  - language: cpp
+  - language: python
+    python: 3.6
 os: linux
 before_install:
   - python --version
