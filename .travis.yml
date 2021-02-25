@@ -1,12 +1,13 @@
-# Set up environment
-matrix:
-  include:
-  - language: cpp
-  - language: python
-    python: 3.6
+language: cpp
+
 os: linux
+
+# Install necessary packages
 before_install:
-  - python --version
+    - sudo apt update
+    - sudo apt-get install python3.6
+    - sudo update-alternatives  --set python /usr/bin/python3.6
+    - python --version
 install:
   - pip install -r requirements.txt
 script:
