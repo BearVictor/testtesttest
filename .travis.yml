@@ -2,8 +2,6 @@ language: cpp
 os: linux
 
 before_install:
-    - sudo apt-get update
-    - sudo add-apt-repository ppa:jonathonf/python-3.6
     - sudo apt update
     - sudo apt install python3.6
     
