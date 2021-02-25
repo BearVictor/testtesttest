@@ -1,6 +1,7 @@
 language: cpp
 
 os: linux
+dist: xenial  
 python:
   - "3.6"
 # Install necessary packages
