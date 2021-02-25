@@ -6,7 +6,7 @@ matrix:
     python: 3.6
 os: linux
 before_install:
-  - python --version
+  - python3 --version
 install:
   - pip install -r requirements.txt
 script:
