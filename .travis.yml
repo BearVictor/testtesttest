@@ -1,14 +1,14 @@
 language: cpp
 os: linux
 
+conan-linux: &conan-linux
+    os: linux
+    dist: xenial
+    language: python
+    python: "3.6"
 # Install necessary packages
 before_install:
-    - curl https://pyenv.run | bash
-    - pyenv versions
-    - pyenv install 3.6
-    - pyenv global 3.6
     - python --version
-    - pyenv versions
     - pip list
 
 install:
