@@ -3,7 +3,7 @@ os: linux
 
 before_install:    
     - python --version
-    - sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+    - update-alternatives --install /usr/bin/python python /usr/bin/python3 1
     - python --version
     - curl "https://bootstrap.pypa.io/3.5/get-pip.py" -o "get-pip.py"
     - python get-pip.py
