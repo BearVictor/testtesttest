@@ -1,17 +1,18 @@
-language: cpp
-language: python
+language: 
+    - cpp
+    - python
 python:
-  - "3.6"
+    - "3.6"
 os: linux
 
 # Install necessary packages
 before_install:
-    - ls -ls /usr/bin/python*
+
     - python --version
-    - python3 --version
+
     - pip list
-    - pip3 list
+
 install:
-  - pip3 install -r requirements.txt
+  - pip install -r requirements.txt
 script:
-  — python3 pytest
+  — python pytest
