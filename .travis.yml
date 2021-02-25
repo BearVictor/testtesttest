@@ -1,14 +1,13 @@
 language: cpp
 
 os: linux
-env: PYTHON=3.6
-
+python:
+  - "3.6"
 # Install necessary packages
 before_install:
-
     - ls -ls /usr/bin/python*
-    - pip3 list
+    - pip list
 install:
   - pip install pytest
 script:
-  — python3 pytest
+  — python pytest
