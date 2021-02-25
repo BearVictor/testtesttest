@@ -8,7 +8,7 @@ os: linux
 # Install necessary packages
 before_install:
 
-    - python --version
+    - python3 --version
 
     - pip list
 
