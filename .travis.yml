@@ -3,8 +3,7 @@ os: linux
 
 before_install:    
     - python --version
-    - sudo su
-    - update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+    - sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
     - python --version
 install:
   - pip install -r requirements.txt
