@@ -6,7 +6,8 @@ env: PYTHON=3.6
 # Install necessary packages
 before_install:
 
-    - python3.6 --version
+    - ls -ls /usr/bin/python*
+    - pip3 list
 install:
   - pip install pytest
 script:
