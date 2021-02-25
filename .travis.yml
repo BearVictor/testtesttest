@@ -5,10 +5,8 @@ env: PYTHON=3.6
 
 # Install necessary packages
 before_install:
-    - sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
-    - sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 2
-    - sudo update-alternatives --config python3
-    - python3 --version
+
+    - python3.6 --version
 install:
   - pip install pytest
 script:
