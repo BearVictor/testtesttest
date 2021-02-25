@@ -1,15 +1,14 @@
-language: 
-    - cpp
-    - python
-python:
-    - "3.6"
+language: cpp
 os: linux
 
 # Install necessary packages
 before_install:
-
-    - python3 --version
-
+    - curl https://pyenv.run | bash
+    - pyenv versions
+    - pyenv install 3.6
+    - pyenv global 3.6
+    - python --version
+    - pyenv versions
     - pip list
 
 install:
