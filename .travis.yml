@@ -10,6 +10,6 @@ before_install:
     - pip --version
     
 install:
-  - pip3 install pytest
+  - pip install pytest
 script:
   — pytest
