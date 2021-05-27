@@ -15,3 +15,5 @@ for dir in list_dir:
     os.chdir(path_parent) # move directory upper
 def():
     return 2
+def():
+    return 2
