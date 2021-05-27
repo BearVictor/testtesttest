@@ -1,4 +1,3 @@
-"""run all scenarios"""
 import os
 
 os.chdir("scenarios") # go to folder
@@ -14,3 +13,5 @@ for dir in list_dir:
 
     path_parent = os.path.dirname(os.getcwd()) #correctly path
     os.chdir(path_parent) # move directory upper
+def():
+    return 2
