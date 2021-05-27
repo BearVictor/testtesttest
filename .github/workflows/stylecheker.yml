@@ -3,5 +3,5 @@ jobs:
   GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Python Style Checker
-        uses: andymckay/pycodestyle-action@0.1.3
+     - uses: actions/checkout@v1
+     - uses: rahul-deepsource/pyaction@1.4.0
